@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Biofertik — biofertilisant liquide 100% naturel, riche en potassium (K), issu de la consoude. Pour des sols plus fertiles et de meilleurs rendements." />
+  <meta name="theme-color" content="#1f7a45" />
+
+  <title>Biofertik — Pour des sols plus fertiles</title>
+
+  <!-- Open Graph (partage WhatsApp/Facebook) -->
+  <meta property="og:title" content="Biofertik — Le potassium naturel pour des sols plus fertiles" />
+  <meta property="og:description" content="Biofertilisant 100% naturel, riche en K, conçu pour restaurer la fertilité des sols et améliorer les rendements." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top Notice -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="dot"></span>
+      <p>Biofertik — <strong>100% naturel</strong> • Riche en <strong>Potassium (K)</strong> • Deux gammes : Pro & Éco</p>
+      <a class="topbar__link" href="#contact">Demander un devis</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Aller en haut">
+        <img src="assets/logo.png" alt="Logo Biofertik" class="brand__logo" />
+        <div class="brand__text">
+          <span class="brand__name">Biofertik</span>
+          <span class="brand__tag">Pour des sols plus fertiles</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleLine"></span>
+          <span class="nav__toggleLine"></span>
+          <span class="nav__toggleLine"></span>
+          <span class="sr-only">Ouvrir le menu</span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a href="#benefices">Bénéfices</a>
+          <a href="#gammes">Gammes</a>
+          <a href="#utilisation">Utilisation</a>
+          <a href="#formats">Formats</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn--primary btn--sm" href="#contact">Devis</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="pill">
+            <span class="pill__k">K</span>
+            Biofertilisant liquide • Valorisation de la consoude
+          </p>
+
+          <h1>Le potassium naturel<br/>pour des sols plus fertiles.</h1>
+
+          <p class="hero__lead">
+            <strong>Biofertik</strong> est un biofertilisant liquide <strong>100% naturel</strong>, riche en <strong>potassium (K)</strong>,
+            issu de la consoude comme matrice végétale locale. Notre mission : restaurer la fertilité des sols et
+            augmenter durablement les rendements des exploitations marocaines.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contact">Demander un devis</a>
+            <a class="btn btn--ghost" href="#gammes">Voir les gammes</a>
+          </div>
+
+          <div class="hero__badges" aria-label="Engagements Biofertik">
+            <div class="badge">
+              <span class="badge__icon">🌿</span>
+              <div>
+                <strong>100% naturel</strong>
+                <span>Solution durable</span>
+              </div>
+            </div>
+            <div class="badge">
+              <span class="badge__icon">🧪</span>
+              <div>
+                <strong>Riche en K</strong>
+                <span>Fertilité & qualité</span>
+              </div>
+            </div>
+            <div class="badge">
+              <span class="badge__icon">♻️</span>
+              <div>
+                <strong>Deux gammes</strong>
+                <span>Pro & Éco</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="visualCard">
+            <img src="assets/hero.png" alt="Sol fertile et cultures (image d'illustration)" onerror="this.style.display='none'" />
+            <div class="visualCard__fallback" id="fallbackHero">
+              <div class="visualCard__ring"></div>
+              <div class="visualCard__content">
+                <p class="visualCard__title">Biofertik</p>
+                <p class="visualCard__subtitle">Potassium (K) • Sols • Rendements</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="miniStats">
+            <div class="miniStat">
+              <span class="miniStat__label">Objectif</span>
+              <span class="miniStat__value">Fertilité</span>
+            </div>
+            <div class="miniStat">
+              <span class="miniStat__label">Usage</span>
+              <span class="miniStat__value">Sol & Plantes</span>
+            </div>
+            <div class="miniStat">
+              <span class="miniStat__label">Marché</span>
+              <span class="miniStat__value">Maroc</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section" id="benefices">
+      <div class="container">
+        <div class="section__head">
+          <h2>Pourquoi Biofertik ?</h2>
+          <p>Des bénéfices concrets, pensés pour l’agriculture et l’usage quotidien.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon">🌱</div>
+            <h3>Fertilité du sol</h3>
+            <p>Améliore l’équilibre du sol et soutient une meilleure nutrition des cultures.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🫚</div>
+            <h3>Racines plus fortes</h3>
+            <p>Favorise un enracinement plus vigoureux, essentiel pour une plante saine.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🍅</div>
+            <h3>Qualité & rendement</h3>
+            <p>Le potassium contribue à la qualité des fruits et à la performance des cultures.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">☀️</div>
+            <h3>Résistance au stress</h3>
+            <p>Aide la plante à mieux tolérer sécheresse et stress environnementaux.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🧴</div>
+            <h3>Simple à utiliser</h3>
+            <p>Dosage clair et application facile : dilution rapide dans l’eau.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">🇲🇦</div>
+            <h3>Valorisation locale</h3>
+            <p>Produit issu de ressources végétales locales, pensé pour le marché marocain.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Potassium Education -->
+    <section class="section section--alt" id="potassium">
+      <div class="container split">
+        <div>
+          <h2>Le potassium (K) : un pilier de la fertilité</h2>
+          <p class="muted">
+            Le potassium joue un rôle clé : il soutient la photosynthèse, améliore la qualité des fruits,
+            favorise un bon développement racinaire et renforce la résistance au stress.
+          </p>
+
+          <div class="checkGrid">
+            <div class="check"><span>✓</span> Photosynthèse & vigueur</div>
+            <div class="check"><span>✓</span> Qualité des fruits</div>
+            <div class="check"><span>✓</span> Résistance au stress</div>
+            <div class="check"><span>✓</span> Croissance racinaire</div>
+          </div>
+
+          <div class="callout">
+            <strong>Biofertik</strong> apporte une solution naturelle et simple pour répondre à ce besoin essentiel.
+          </div>
+        </div>
+
+        <div class="kCard">
+          <div class="kCard__top">
+            <span class="kChip">K</span>
+            <div>
+              <p class="kCard__title">Focus Potassium</p>
+              <p class="kCard__subtitle">Fertilité • Qualité • Résistance</p>
+            </div>
+          </div>
+          <div class="kCard__body">
+            <p><strong>Positionnement :</strong> naturel, efficace, adapté Pro & Éco.</p>
+            <p><strong>Usage :</strong> sol et plantes, dilution rapide.</p>
+            <p><strong>Objectif :</strong> agriculture durable au Maroc.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ranges -->
+    <section class="section" id="gammes">
+      <div class="container">
+        <div class="section__head">
+          <h2>Deux gammes, un seul objectif : la performance</h2>
+          <p>Une segmentation claire : <strong>Pro</strong> pour l’exploitation, <strong>Éco</strong> pour l’engagement durable.</p>
+        </div>
+
+        <div class="rangeGrid">
+          <article class="range">
+            <div class="range__media">
+              <img src="assets/1.png" alt="Biofertik — Gamme professionnelle phytosanitaire" />
+            </div>
+            <div class="range__content">
+              <div class="range__tag">Gamme Pro • Phytosanitaire</div>
+              <h3>Robuste, sécurisée, conforme</h3>
+              <ul class="list">
+                <li>Flacon hermétique : évite contamination air/humidité</li>
+                <li>Opaque : protège les composés actifs sensibles à la lumière</li>
+                <li>Matériau résistant et hygiénique, usage professionnel</li>
+                <li>Étiquette claire : doses, précautions, mode d’utilisation</li>
+              </ul>
+              <div class="range__meta">
+                <span>Pour : agriculteurs • coopératives • exploitations</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="range range--eco">
+            <div class="range__media">
+              <img src="assets/2.png" alt="Biofertik — Gamme écoresponsable biodégradable" />
+            </div>
+            <div class="range__content">
+              <div class="range__tag">Gamme Éco • Biodégradable</div>
+              <h3>Écologique, légère, responsable</h3>
+              <ul class="list">
+                <li>Emballage biodégradable (fibres végétales)</li>
+                <li>Canne à sucre, paille de blé, déchets agricoles valorisés</li>
+                <li>Option complémentaire (ne remplace pas le phytosanitaire)</li>
+                <li>Idéal pour bio, jardiniers, particuliers engagés</li>
+              </ul>
+              <div class="range__meta">
+                <span>Pour : coopératives bio • jardiniers • particuliers</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong>Message clé :</strong> Deux besoins, une même efficacité — Pro pour la performance, Éco pour l’engagement.
+        </div>
+      </div>
+    </section>
+
+    <!-- Usage -->
+    <section class="section section--alt" id="utilisation">
+      <div class="container">
+        <div class="section__head">
+          <h2>Mode d’utilisation</h2>
+          <p>Un dosage clair, simple, et adapté à l’usage terrain.</p>
+        </div>
+
+        <div class="usageGrid">
+          <div class="doseCard">
+            <h3>Dosage recommandé</h3>
+            <div class="dose">
+              <div class="dose__row">
+                <span class="dose__label">Application au sol</span>
+                <span class="dose__value">100 mL / 10 L d’eau</span>
+              </div>
+              <div class="dose__row">
+                <span class="dose__label">Application sur plantes</span>
+                <span class="dose__value">50 mL / 10 L d’eau</span>
+              </div>
+            </div>
+
+            <div class="doseTip">
+              <strong>Conseil :</strong> Agiter avant utilisation. Ne pas dépasser les doses recommandées.
+            </div>
+          </div>
+
+          <div class="doseCard">
+            <h3>Précautions d’emploi</h3>
+            <ul class="list">
+              <li>Agiter avant utilisation</li>
+              <li>Ne pas dépasser les doses recommandées</li>
+              <li>Usage agricole uniquement</li>
+              <li>Conserver à l’abri de la lumière et de la chaleur</li>
+            </ul>
+            <div class="doseTip">
+              <strong>Note :</strong> Adapter la fréquence selon culture et objectif (sol / feuillage).
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formats -->
+    <section class="section" id="formats">
+      <div class="container">
+        <div class="section__head">
+          <h2>Formats disponibles</h2>
+          <p>Du test découverte à l’exploitation : choisis le format adapté.</p>
+        </div>
+
+        <div class="productGrid">
+          <article class="product">
+            <div class="product__badge">Découverte</div>
+            <h3>Mini-gamme</h3>
+            <p class="muted">Pour jardiniers & petits agriculteurs (tester sur petite parcelle).</p>
+            <div class="product__specs">
+              <span>250 mL</span>
+              <span>500 mL</span>
+            </div>
+            <a class="btn btn--ghost btn--block" href="#contact">Demander prix</a>
+          </article>
+
+          <article class="product product--featured">
+            <div class="product__badge">Pro</div>
+            <h3>Format exploitation</h3>
+            <p class="muted">Pensé pour coopératives et exploitations agricoles.</p>
+            <div class="product__specs">
+              <span>2,5 L</span>
+              <span>+ sur demande</span>
+            </div>
+            <a class="btn btn--primary btn--block" href="#contact">Demander devis</a>
+          </article>
+
+          <article class="product">
+            <div class="product__badge">Éco</div>
+            <h3>Option biodégradable</h3>
+            <p class="muted">Pour les utilisateurs engagés en agriculture durable.</p>
+            <div class="product__specs">
+              <span>Fibres végétales</span>
+              <span>Réduction plastique</span>
+            </div>
+            <a class="btn btn--ghost btn--block" href="#contact">Être rappelé</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p>Réponses rapides aux questions fréquentes.</p>
+        </div>
+
+        <div class="faq" id="faqList">
+          <details class="faq__item">
+            <summary>Biofertik est-il 100% naturel ?</summary>
+            <p>Oui, Biofertik est conçu comme un biofertilisant naturel issu de la valorisation végétale (consoude) et riche en potassium (K).</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Comment choisir entre la gamme Pro et la gamme Éco ?</summary>
+            <p>La gamme Pro vise la robustesse et la conservation (usage professionnel). La gamme Éco propose un emballage biodégradable en option pour réduire le plastique.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Quel est le dosage recommandé ?</summary>
+            <p>Au sol : <strong>100 mL / 10 L d’eau</strong>. Sur plantes : <strong>50 mL / 10 L d’eau</strong>. Agiter avant utilisation.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Convient-il à toutes les cultures ?</summary>
+            <p>Biofertik est destiné à l’usage agricole. La compatibilité peut dépendre de la culture et du plan de fertilisation. Contacte-nous pour un conseil.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Proposez-vous une mini-gamme pour tester ?</summary>
+            <p>Oui : formats <strong>250 mL</strong> et <strong>500 mL</strong> pour essai sur petite parcelle avant un plus grand volume.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Comment commander / demander un devis ?</summary>
+            <p>Utilise le formulaire ci-dessous ou contacte-nous via WhatsApp pour une réponse rapide.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact & devis</h2>
+          <p>Dis-nous ton besoin (culture, surface, format) et on te répond rapidement.</p>
+        </div>
+
+        <div class="contactGrid">
+          <form class="form" id="contactForm">
+            <div class="form__row">
+              <label>
+                Nom / Coopérative
+                <input required name="name" type="text" placeholder="Ex: Coopérative Al Amal" />
+              </label>
+              <label>
+                Téléphone
+                <input required name="phone" type="tel" placeholder="Ex: +212 6xx xx xx xx" />
+              </label>
+            </div>
+
+            <div class="form__row">
+              <label>
+                Ville
+                <input name="city" type="text" placeholder="Ex: Casablanca" />
+              </label>
+              <label>
+                Format souhaité
+                <select name="format">
+                  <option>Mini-gamme (250/500 mL)</option>
+                  <option>Format Pro (2,5 L)</option>
+                  <option>Option Éco (biodégradable)</option>
+                  <option>Je veux être conseillé</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              Message
+              <textarea required name="message" rows="5" placeholder="Ex: culture, surface, objectif (sol/plantes), fréquence..."></textarea>
+            </label>
+
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">Envoyer la demande</button>
+              <a class="btn btn--ghost" id="whatsBtn" href="#" target="_blank" rel="noopener">WhatsApp rapide</a>
+            </div>
+
+            <p class="form__hint">
+              * Le bouton “Envoyer” ouvre votre email (simple). Pour une vraie réception automatique, on peut connecter Formspree/Netlify Forms.
+            </p>
+          </form>
+
+          <aside class="contactCard">
+            <h3>Biofertik</h3>
+            <p class="muted">
+              Biofertilisant liquide naturel, riche en potassium (K), pensé pour l’agriculture durable au Maroc.
+            </p>
+
+            <div class="contactCard__rows">
+              <div class="contactRow">
+                <span>⚡ Réponse</span>
+                <strong>Rapide sur WhatsApp</strong>
+              </div>
+              <div class="contactRow">
+                <span>📦 Gammes</span>
+                <strong>Pro & Éco</strong>
+              </div>
+              <div class="contactRow">
+                <span>🧴 Dosage</span>
+                <strong>Clair & simple</strong>
+              </div>
+            </div>
+
+            <div class="contactCard__cta">
+              <a class="btn btn--primary btn--block" href="#top">Retour en haut</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating WhatsApp -->
+    <a class="waFloat" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+      <span class="waFloat__icon">💬</span>
+      <span class="waFloat__text">WhatsApp</span>
+    </a>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Biofertik. Tous droits réservés.</p>
+      <div class="footer__links">
+        <a href="#benefices">Bénéfices</a>
+        <a href="#gammes">Gammes</a>
+        <a href="#utilisation">Utilisation</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
