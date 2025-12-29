@@ -405,85 +405,106 @@
     </section>
 
     <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section__head">
-          <h2>Contact & devis</h2>
-          <p>Dis-nous ton besoin (culture, surface, format) et on te répond rapidement.</p>
+  <!-- Contact -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section__head">
+      <h2>Contact & devis</h2>
+      <p>Dis-nous ton besoin (culture, surface, format) et on te répond rapidement.</p>
+    </div>
+
+    <div class="contactGrid">
+      <!-- ✅ FORMULAIRE EMAILJS -->
+      <form class="form" id="contactForm">
+        <div class="form__row">
+          <label>
+            Nom / Coopérative
+            <input required name="name" type="text" placeholder="Ex: Coopérative Al Amal" />
+          </label>
+          <label>
+            Téléphone
+            <input required name="phone" type="tel" placeholder="Ex: +212 6xx xx xx xx" />
+          </label>
         </div>
 
-        <div class="contactGrid">
-          <form class="form" id="contactForm">
-            <div class="form__row">
-              <label>
-                Nom / Coopérative
-                <input required name="name" type="text" placeholder="Ex: Coopérative Al Amal" />
-              </label>
-              <label>
-                Téléphone
-                <input required name="phone" type="tel" placeholder="Ex: +212 6xx xx xx xx" />
-              </label>
-            </div>
-
-            <div class="form__row">
-              <label>
-                Ville
-                <input name="city" type="text" placeholder="Ex: Casablanca" />
-              </label>
-              <label>
-                Format souhaité
-                <select name="format">
-                  <option>Mini-gamme (250/500 mL)</option>
-                  <option>Format Pro (2,5 L)</option>
-                  <option>Option Éco (biodégradable)</option>
-                  <option>Je veux être conseillé</option>
-                </select>
-              </label>
-            </div>
-
-            <label>
-              Message
-              <textarea required name="message" rows="5" placeholder="Ex: culture, surface, objectif (sol/plantes), fréquence..."></textarea>
-            </label>
-
-            <div class="form__actions">
-              <button class="btn btn--primary" type="submit">Envoyer la demande</button>
-              <a class="btn btn--ghost" id="whatsBtn" href="#" target="_blank" rel="noopener">WhatsApp rapide</a>
-            </div>
-
-            <p class="form__hint">
-              * Le bouton “Envoyer” ouvre votre email (simple). Pour une vraie réception automatique, on peut connecter Formspree/Netlify Forms.
-            </p>
-          </form>
-
-          <aside class="contactCard">
-            <h3>Biofertik</h3>
-            <p class="muted">
-              Biofertilisant liquide naturel, riche en potassium (K), pensé pour l’agriculture durable au Maroc.
-            </p>
-
-            <div class="contactCard__rows">
-              <div class="contactRow">
-                <span>⚡ Réponse</span>
-                <strong>Rapide sur WhatsApp</strong>
-              </div>
-              <div class="contactRow">
-                <span>📦 Gammes</span>
-                <strong>Pro & Éco</strong>
-              </div>
-              <div class="contactRow">
-                <span>🧴 Dosage</span>
-                <strong>Clair & simple</strong>
-              </div>
-            </div>
-
-            <div class="contactCard__cta">
-              <a class="btn btn--primary btn--block" href="#top">Retour en haut</a>
-            </div>
-          </aside>
+        <div class="form__row">
+          <label>
+            Email (pour vous répondre)
+            <input required name="email" type="email" placeholder="Ex: contact@cooperative.ma" />
+          </label>
+          <label>
+            Ville
+            <input name="city" type="text" placeholder="Ex: Casablanca" />
+          </label>
         </div>
-      </div>
-    </section>
+
+        <div class="form__row">
+          <label>
+            Format souhaité
+            <select name="format">
+              <option>Mini-gamme (250/500 mL)</option>
+              <option>Format Pro (2,5 L)</option>
+              <option>Option Éco (biodégradable)</option>
+              <option>Je veux être conseillé</option>
+            </select>
+          </label>
+          <label>
+            Culture / Surface (optionnel)
+            <input name="surface" type="text" placeholder="Ex: tomates, 2 hectares..." />
+          </label>
+        </div>
+
+        <label>
+          Message
+          <textarea required name="message" rows="5" placeholder="Ex: culture, surface, objectif (sol/plantes), fréquence..."></textarea>
+        </label>
+
+        <div class="form__actions">
+          <button class="btn btn--primary" id="sendBtn" type="submit">Envoyer la demande</button>
+          <a class="btn btn--ghost" id="whatsBtn" href="#" target="_blank" rel="noopener">WhatsApp rapide</a>
+        </div>
+
+        <!-- ✅ message status -->
+        <div id="formStatus" class="formStatus" role="status" aria-live="polite" style="display:none;"></div>
+
+        <p class="form__hint">
+          En envoyant, vous acceptez d’être contacté(e). Nous répondrons le plus tôt possible.
+        </p>
+      </form>
+
+      <aside class="contactCard">
+        <h3>Biofertik</h3>
+        <p class="muted">
+          Biofertilisant liquide naturel, riche en potassium (K), pensé pour l’agriculture durable au Maroc.
+        </p>
+
+        <div class="contactCard__rows">
+          <div class="contactRow">
+            <span>⚡ Réponse</span>
+            <strong>Rapide sur WhatsApp</strong>
+          </div>
+          <div class="contactRow">
+            <span>📦 Gammes</span>
+            <strong>Pro & Éco</strong>
+          </div>
+          <div class="contactRow">
+            <span>🧴 Dosage</span>
+            <strong>Clair & simple</strong>
+          </div>
+        </div>
+
+        <div class="contactCard__cta">
+          <a class="btn btn--primary btn--block" href="#top">Retour en haut</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ EmailJS CDN (mets ça juste avant script.js) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+
 
     <!-- Floating WhatsApp -->
     <a class="waFloat" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
