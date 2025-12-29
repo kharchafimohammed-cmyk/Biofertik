@@ -1,10 +1,10 @@
-// ===== Helpers
+// Helpers
 const $ = (sel) => document.querySelector(sel);
 
 const yearEl = $("#year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// ===== Mobile nav
+// Mobile nav
 const navToggle = $("#navToggle");
 const navMenu = $("#navMenu");
 
@@ -14,7 +14,6 @@ if (navToggle && navMenu) {
     navToggle.setAttribute("aria-expanded", String(open));
   });
 
-  // close menu on link click
   navMenu.querySelectorAll("a").forEach(a => {
     a.addEventListener("click", () => {
       navMenu.classList.remove("is-open");
@@ -23,8 +22,8 @@ if (navToggle && navMenu) {
   });
 }
 
-// ===== WhatsApp links (REMPLACE le numéro)
-const WHATSAPP_NUMBER = "212600000000"; // <-- Mets ton numéro: ex: 2126XXXXXXXX
+// WhatsApp (REMPLACE le numéro)
+const WHATSAPP_NUMBER = "212600000000"; // <-- ex: 2126XXXXXXXX
 const WA_MESSAGE = encodeURIComponent(
   "Bonjour, je souhaite un devis pour Biofertik. (Culture / surface / format souhaité) : "
 );
@@ -36,7 +35,7 @@ const whatsBtn = $("#whatsBtn");
 if (waFloat) waFloat.href = waLink;
 if (whatsBtn) whatsBtn.href = waLink;
 
-// ===== Contact form: opens email (simple + gratuit)
+// Contact form: opens email
 const form = $("#contactForm");
 if (form) {
   form.addEventListener("submit", (e) => {
@@ -54,8 +53,7 @@ if (form) {
       `Nom/Coopérative: ${name}\nTéléphone: ${phone}\nVille: ${city}\nFormat: ${format}\n\nMessage:\n${message}\n\n— Envoyé depuis le site Biofertik`
     );
 
-    // Mets ton email ici (ou laisse vide et change plus tard)
-    const EMAIL = "contact@biofertik.ma"; // <-- remplace si tu as un email réel
+    const EMAIL = "contact@biofertik.ma"; // <-- remplace par ton email
     window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
   });
 }
